@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
+    <script type="text/javascript">
+    Parse.initialize("fYOLoSeCKgYHCfvHZ4BKq2xFG4W8eZFgkCMeDb1p", "WylWNwkFQhxFTjmmaOWqhu2v5ABNCHA545TbS0r2");
+
+    var TestObject = Parse.Object.extend("TestObject");
+var testObject = new TestObject();
+testObject.save({foo: "bar"}, {
+  success: function(object) {
+    alert("yay! it worked");
+  }
+});
+    </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+<!--
+    <nav> 
+<ul class="col-lg-offset-7">
+            <li><a href="#">our story</a></li>
+            <li ><a href="#about">our team</a></li>
+            <li> <a href="#contact">our work</a></li>
+            <li><a href="#contact">submissions</a></li>
+    </ul>
+    </nav>
+    -->
+
+  <div class="navbar navbar-inverse navbar-fixed-top col-lg-offset-7">
+
+   <ul class="nav navbar-nav">
+            <li><a href="#">our story&nbsp;&nbsp;|</a></li>
+            <li ><a href="#about"> our team&nbsp;&nbsp;|</a></li>
+            <li> <a href="#contact"> our work&nbsp;&nbsp;|</a></li>
+            <li><a href="#contact"> submissions</a></li>
+    </ul>
+    </div>
+
+<div class="row">
+
+<div class="col-10 col-sm-8 col-lg-6">
+
+  <div class="welcome">
+  <h1>Welcome,</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        </div>
+
+<br/>
+<br/>
+
+ <form class="form-signin">
+        <input type="text" class="input-block-level" placeholder="Email address" autofocus><br/><br/>
+        <input type="password" class="input-block-level" placeholder="Password">
+    
+        <button class="btn btn-large btn-primary btn-block " type="submit">Submit</button>
+      </form>
+      </div>
+
+  <div class="col-6 col-sm-4 col-lg-4 robot">
+  <img src="images/robot.png"/>
+
+  </div>
+</div>
+
+     
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
