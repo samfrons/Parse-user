@@ -16,7 +16,7 @@ module.exports = function (grunt) {
       },
       watch: {
         options: {
-          livereload: 801,
+          //livereload: 801,
         },
         css: {
           files: ['less/*.less'],
