@@ -1,5 +1,10 @@
 @fsize_small: .99rem;
-@h1_fsize_small: 2.50rem;
+@navbar_size_small: 1.25rem;
+@h1_fsize_small: 2.50rem!Important;
+@submission_h1_fsize_small: 2rem!Important;
+@blue: rgb(0, 191, 255);
+@white: rgb(255, 255, 255);
+@pink: rgb(240,77,146);
 
 @media screen and (max-width: 400px){
   * {
@@ -8,6 +13,7 @@
   h1{
   	font-size: @h1_fsize_small;
   }
+  
 }
 
 @media (max-width: 768px){
@@ -15,10 +21,68 @@
 		font-size: @fsize_small;
 	}
 	h1{
-	  	font-size: @h1_fsize_small;
+	  	font-size: @h1_fsize_small
+	}
+	.submission-heading-text{
+		font-size: @submission_h1_fsize_small;
+	}
+}
+
+@media (max-width: 1280px){
+	.navbar {
+		font-size: @navbar_size_small;
 	}
 }
 
 .custom-nvabar-toggle {
 	margin-right: 20px;
+}
+
+.story-reader{
+	width: 100%;
+	min-height: 450px;
+	border: inset 1px #ccc;
+	padding: 5px;
+}
+
+.story-logo{
+	width: 100%;
+	min-height: 80px;
+	border: inset 1px #ccc;
+	padding: 5px;
+}
+
+.team-video{
+	width: 100%;
+	max-height: 300px;
+}
+.team-video iframe{
+	min-height: 300px;
+}
+.team-video-title{
+	width: 100%;
+	min-height: 30px;
+	background-color: @blue;
+	color: @white;
+	padding: 5px;
+	font-weight: normal
+}
+.team-member-caption {
+	background-color: @blue;
+	color: @white;
+	padding: 2px !Important;
+	max-height: 25px;
+}
+.work-caption {
+	background-color: @blue;
+	color: @white;
+	padding: 2px !Important;
+	max-height: 25px;
+}
+.submission-heading-text {
+	color: @pink;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 8rem;
 }
