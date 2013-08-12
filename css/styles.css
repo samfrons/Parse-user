@@ -1,5 +1,5 @@
 body {
-	background: url(../images/skyline.jpg) 0 0 fixed no-repeat;
+	background: url(../images/background.jpeg) 0 0 fixed no-repeat;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -35,26 +35,35 @@ ul.navbar-nav li a{
 
 
 .robot {
-	
+	position: absolute;
+	bottom: 0px; 
+	left: 66%;
 }
 
 .robot img {
-	width: 120%;
+	width: 150%;
+	position: relative;
 
 }
 
 
 .welcome {
-	background-color: rgba(255,255,255,0.8);
-	border-radius: 5px;
-	border: 1px solid teal;
+    
 	padding: 5px;
 }
 
 .welcome h1 {
-	color: rgb(240,77,146);
+	color: #ef4e91;
 	text-transform: uppercase;
 	font-style: italic;
 	font-weight: bold;
+	font-family: Helvetica Neue; 
+}
+
+
+img.footer {
+	width: 60%;
+	bottom: 0%;
+	position: fixed;
 }
 
