@@ -16,6 +16,10 @@ body.team {
 body.work {
 background: url(../images/work.png) 0 0 fixed no-repeat;
 }
+
+body.submissions {
+	background: url(../images/proposal_background.jpeg) 0 0 fixed no-repeat;
+}
 div.container {
 
 }
