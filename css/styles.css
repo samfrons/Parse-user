@@ -5,6 +5,17 @@ body {
 	-webkit-background-size: cover;
 }
 
+body.story {
+	background: url(../images/story_background.jpeg) 0 0 fixed no-repeat;
+}
+
+body.team {
+ background: url(../images/team_background.jpeg) 0 0 fixed no-repeat;
+}
+
+body.work {
+background: url(../images/work.png) 0 0 fixed no-repeat;
+}
 div.container {
 
 }
@@ -24,6 +35,7 @@ border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
 box-shadow: 0px 3px 2px rgba(0,0,0,.5);
 min-height: inherit;
+padding: 0px;
 }
 
 ul.navbar-nav li a{
@@ -47,8 +59,12 @@ ul.navbar-nav li a{
 }
 
 
+.welcome_background {
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 5px;
+	border: 2px solid #1588bc;
+}
 .welcome {
-    
 	padding: 5px;
 }
 
@@ -67,3 +83,9 @@ img.footer {
 	position: fixed;
 }
 
+
+/* nav focus */ 
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: #f166a0;
+}
