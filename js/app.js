@@ -4,11 +4,10 @@ $(document).ready(function(){
 	var currentUser = Parse.User.current();
 	if (currentUser) {
 	    // OK
-	    console.log(">>>", currentUser);
 	    var url = window.location.pathname;    
     	var currentName = url.substring(url.lastIndexOf('/') + 1);
 	    if(currentName == "index.html") {
-	    	window.location = "story.html";
+	    	window.location = "welcome.html";
 	    	return;
 	    }
 	} else {
@@ -44,9 +43,9 @@ $(document).ready(function(){
 
 		Parse.User.logIn(username, password, {
 		  success: function(user) {
-		    // redirect to our story page
+		    // redirect to our welcome page
 		    $('#btnlogin').button('reset');
-		    window.location = "story.html";
+		    window.location = "welcome.html";
 		  },
 		  error: function(user, error) {
 		    // The login failed. Check error to see why.
@@ -58,9 +57,25 @@ $(document).ready(function(){
 	});
 
 	$('[name="btnlogout"]').bind('click', function(e){
-		console.log('>>>>');
 		if(e) e.stopPropagation();
 		Parse.User.logOut();
 		window.location = "index.html";
 	});
+
+	var mq = window.matchMedia("(max-width: 400px)");
+
+	if (mq.matches) {
+		$('#normalrobot').removeClass('show');
+		$('#normalrobot').addClass('hide');
+
+		$('#smallrobot').removeClass('hide');
+		$('#smallrobot').addClass('show');
+	}
+	else {
+		$('#smallrobot').removeClass('show');
+		$('#smallrobot').addClass('hide');
+
+		$('#normalrobot').removeClass('hide');
+		$('#normalrobot').addClass('show');
+	}
 });
