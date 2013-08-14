@@ -61,7 +61,7 @@ ul.navbar-nav li a{
 
 .robot {
 	position: absolute;
-	bottom: 0px; 
+	bottom: 0px;
 	left: 66%;
 }
 
@@ -86,7 +86,7 @@ ul.navbar-nav li a{
 	text-transform: uppercase;
 	font-style: italic;
 	font-weight: bold;
-	font-family: HelveticaNeue; 
+	font-family: HelveticaNeue;
 }
 
 
@@ -127,7 +127,7 @@ button#btnlogin {
 
 .down {
 	margin-top: 20px;
-	
+
 }
 
 .thumbnail > span {
@@ -158,6 +158,10 @@ background-color: #1588bc;
 	border-radius: 5px
 }
 
+.story-reader .popover {
+    top: 50% !important
+}
+
 .story-reader img {
 	width: 90%;
 }
@@ -170,7 +174,7 @@ background-color: #1588bc;
 }
 
 p#principles:after {
-	background-color: rgba(0,0,0,0.3); 
+	background-color: rgba(0,0,0,0.3);
 	content: 'hi';
 	display: inline;
 	position: relative;
@@ -181,12 +185,12 @@ p#principles:after {
 	width: 95%;
 }
 
-p#principles:hover:after {
-	background-color: red;
-	content: 'Four Core Principles. We have four core beliefs that uniquely shape our culture and the way we work. We call this FBDS and this is the qualification we look for in every person we hire. Fast: We will seize opportunities to gain competitive advantage.Brave: We will push clients forward with entrepreneurial passion. Fast:';
-	position: absolute;
-	visibility: visible;
-}
+/*p#principles:hover:after {*/
+	/*background-color: red;*/
+	/*content: 'Four Core Principles. We have four core beliefs that uniquely shape our culture and the way we work. We call this FBDS and this is the qualification we look for in every person we hire. Fast: We will seize opportunities to gain competitive advantage.Brave: We will push clients forward with entrepreneurial passion. Fast:';*/
+	/*position: absolute;*/
+	/*visibility: visible;*/
+/*}*/
 
 
 
@@ -210,9 +214,9 @@ width: 100%;
 	position: fixed;
 	top: 75%;
 	display: inline;
-	
+
 }
-/* nav focus */ 
+/* nav focus */
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
 	background-color: #f166a0;
@@ -256,7 +260,7 @@ box-shadow: 0px 1px 4px black;
 
 
 }
-/* media queries */ 
+/* media queries */
 @media (max-width: 768px) {
 .footer img {
 	width: 95%;

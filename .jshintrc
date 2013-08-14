@@ -1,0 +1,38 @@
+{
+  "esnext": true,
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "quotmark": false,
+  "regexp": true,
+  "undef": true,
+  "unused": true,
+  "strict": false,
+  "trailing": true,
+  "smarttabs": true,
+
+  // Environments
+  "browser"       : true,      // Web Browser (window, document, etc)
+  "couch"         : false,     // CouchDB
+  "devel"         : false,     // Development/debugging (alert, confirm, etc)
+  "dojo"          : false,     // Dojo Toolkit
+  "jquery"        : true,      // jQuery
+  "mootools"      : false,     // MooTools
+  "node"          : false,     // Node.js
+  "nonstandard"   : false,     // Widely adopted globals (escape, unescape, etc)
+  "prototypejs"   : false,     // Prototype and Scriptaculous
+  "rhino"         : false,     // Rhino
+  "worker"        : false,     // Web Workers
+  "wsh"           : false,     // Windows Scripting Host
+  "yui"           : false,     // Yahoo User Interface
+
+  "globals": {
+    "Parse": false
+  }
+}

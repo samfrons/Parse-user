@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -14,76 +14,90 @@
     <link href="css/signin.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
-  </head>
-  <body class="story">
-    <div class="container">
-       <div class="navbar navbar-inverse navbar-fixed-top col-sm-7 col-6 col-lg-5">
+</head>
+<body class="story">
+<div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top col-sm-7 col-6 col-lg-5">
         <div class="container">
-          <a href="#" type="button" name="btnlogout" class="navbar-toggle custom-nvabar-toggle" data-toggle="collapse" alt="Logout">
-            <span class="icon-off icon-large"></span>
-          </a>
-         <a href="./submissions.html" type="button" class="navbar-toggle custom-nvabar-toggle" data-toggle="collapse" alt="Submissions">
-            <span class="icon-envelope icon-large"></span>
-          </a>
-          <a href="./work.html" type="button" class="navbar-toggle custom-nvabar-toggle" data-toggle="collapse" alt="Our Work">
-            <span class="icon-home icon-large"></span>
-          </a>
-          <a href="./team.html" type="button" class="navbar-toggle custom-nvabar-toggle" data-toggle="collapse" alt="Our Team">
-            <span class="icon-th icon-large"></span>
-          </a>
-          <button type="button" class="navbar-toggle custom-nvabar-toggle" data-toggle="collapse" alt="Our Story">
-            <span class="icon-list icon-large"></span>
-          </button>
-          <div class="nav-collapse collapse navbar-responsive-collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">our story&nbsp;&nbsp;|</a></li>
-                <li><a href="team.html"> our team&nbsp;&nbsp;|</a></li>
-                <li><a href="work.html"> our work&nbsp;&nbsp;|</a></li>
-                <li><a href="submissions.html"> submissions&nbsp;&nbsp;|</a></li>
-                <li><a name="btnlogout"> Logout</a></li>
-              </ul>
-          </div>
+            <a href="#" type="button" name="btnlogout" class="navbar-toggle custom-nvabar-toggle" data-toggle="collapse" alt="Logout">
+                <span class="icon-off icon-large"></span>
+            </a>
+            <a href="./submissions.html" type="button" class="navbar-toggle custom-nvabar-toggle" data-toggle="collapse" alt="Submissions">
+                <span class="icon-envelope icon-large"></span>
+            </a>
+            <a href="./work.html" type="button" class="navbar-toggle custom-nvabar-toggle" data-toggle="collapse" alt="Our Work">
+                <span class="icon-home icon-large"></span>
+            </a>
+            <a href="./team.html" type="button" class="navbar-toggle custom-nvabar-toggle" data-toggle="collapse" alt="Our Team">
+                <span class="icon-th icon-large"></span>
+            </a>
+            <button type="button" class="navbar-toggle custom-nvabar-toggle" data-toggle="collapse" alt="Our Story">
+                <span class="icon-list icon-large"></span>
+            </button>
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">our story&nbsp;&nbsp;|</a></li>
+                    <li><a href="team.html"> our team&nbsp;&nbsp;|</a></li>
+                    <li><a href="work.html"> our work&nbsp;&nbsp;|</a></li>
+                    <li><a href="submissions.html"> submissions&nbsp;&nbsp;|</a></li>
+                    <li><a name="btnlogout"> Logout</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div class="row down">
+    <div class="row down">
         <div class="col-12 col-sm-7 col-lg-7">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="pull-left story-reader">
-              <p id="principles"><img  src="images/core_principles.png"/></p>
-              <p id="network"><img src="images/scalable_network.png"/></p>
-              <p id="capabilities"><img src="images/right_capabilities.png"/></p>
-              <p id="experience"><img src="images/right_experience.png"/></p>
-              <p id="systems"><img src="images/right_systems.png"/></p>
-              <p id="network"><img src="images/powerful_network.png"/></p>
-              <p id="future"><img src="images/future.png"/></p>
-              <p id="industry"><img src="images/industry.png"/></p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pull-left story-reader">
+                        <p id="principles" class="btn-popover"><img  src="images/core_principles.png"/></p>
+                        <p id="scalable_network" class="btn-popover"><img src="images/scalable_network.png"/></p>
+                        <p id="capabilities" class="btn-popover"><img src="images/right_capabilities.png"/></p>
+                        <p id="experience" class="btn-popover"><img src="images/right_experience.png"/></p>
+                        <p id="systems" class="btn-popover"><img src="images/right_systems.png"/></p>
+                        <p id="powerful_network" class="btn-popover"><img src="images/powerful_network.png"/></p>
+                        <p id="future" class="btn-popover"><img src="images/future.png"/></p>
+                        <p id="industry" class="btn-popover"><img src="images/industry.png"/></p>
 
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-          <div class="row footer">
-            <div class="col-11 col-sm-7 col-lg-10 ">
-             <img src="images/footer.png"/>
+
+            <div id="popover-content-wrapper" style="display: none">
+                <div data-popover-content-for="principles"><p>principles</p></div>
+                <div data-popover-content-for="scalable_network"><p>scalable_network</p></div>
+                <div data-popover-content-for="capabilities"><p>capabilities</p></div>
+                <div data-popover-content-for="experience"><p>experience</p></div>
+                <div data-popover-content-for="systems"><p>systems</p></div>
+                <div data-popover-content-for="powerful_network"><p>powerful_network</p></div>
+                <div data-popover-content-for="future"><p>future</p></div>
+                <div data-popover-content-for="industry"><p>industry</p></div>
             </div>
-          </div>  
 
 
-<!-- right side -->
+            <div class="row footer">
+                <div class="col-11 col-sm-7 col-lg-10 ">
+                    <img src="images/footer.png"/>
+                </div>
+            </div>
+
+
+            <!-- right side -->
 
 
         </div>
         <div class="col-10 col-sm-5 col-lg-5 character">
-          <img src="images/pony.png"/>
+            <img src="images/pony.png"/>
         </div>
-      </div>
+    </div>
 
-    </div> <!-- /container -->
-    
-    <script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+</div> <!-- /container -->
+
+<script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/story.js"></script>
+</body>
 </html>
