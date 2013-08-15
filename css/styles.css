@@ -303,35 +303,23 @@ border-top-right-radius: 0px !important;
 .carousel .thumbnail, .img-thumbnail {
     border-radius: 0px;
 }
-.carousel .popover {
+
+body.team .popover-holder {
     background-color: white;
-    display: block;
     position: absolute;
     left: 100px;
     top: 0px;
-    
 }
 
-.carousel .popover h3 {
+body.team .popover-holder h3 {
     color: #1588bc;
     line-height: 2px;
     font-size: 16px;
 }
 
-.carousel .popover h4 {
+body.team .popover-holder h4 {
     color: rgb(27,27,27);
     text-transform: uppercase;
-}
-
-.carousel .popover-content {
-    background-color: white;
-    border: 2px solid #1588bc;
-    border-radius: 5px;
-    
-    position: absolute !important;
-    min-width: 500px;
-    top: -407px !important;
-    left: 500px !important;
 }
 
 
