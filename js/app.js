@@ -15,15 +15,18 @@ $(document).ready(function(){
     window.location = "index.html";
   }
 
-  $('#btnlogin').on('click', function(e){
-//  window.submitLogin = function() {
-    if(e) e.stopPropagation();
+  $('#btnlogin').button('reset'); // reset login button
+
+  $('#login-form').submit(function(e) {
+    if (e) {
+      e.preventDefault();
+    }
 
     $('#btnlogin').button('loading');
     $('#errormsg_incorrect_username_password').removeClass('show').addClass('hide'); // hide error
 
-    var username = encodeURIComponent($('#email').val());
-    var password = encodeURIComponent($('#password').val());
+    var username = $('#email').val();
+    var password = $('#password').val();
 
     if (!username && !password) { // must supply username & password
       $('#btnlogin').button('reset');
@@ -44,14 +47,16 @@ $(document).ready(function(){
           $('#errormsg_incorrect_username_password').removeClass('hide').addClass('show'); // show error
         }
       });
+      return false;
     }
-//  };
   });
 
 
   // logout button click
   $('[name="btnlogout"]').bind('click', function(e){
-    if(e) e.stopPropagation();
+    if (e) {
+      e.stopPropagation();
+    }
     Parse.User.logOut();
     window.location = "index.html";
   });
