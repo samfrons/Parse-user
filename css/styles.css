@@ -1,9 +1,9 @@
 @font-face {
-	font-family: HelveticaNeue; src: url('fonts/HelveticaNeue.ttf');
+	font-family: 'Helvetica Neue LT Com', sans-serif; src: url('../fonts/HelveticaNeue.ttf');
 }
 
 @font-face {
-	font-family: HelveticaNeue-Bd; src: url('fonts/HelveticaNeue-Bd.otf');
+	font-family: 'Helvetica Neue LT Std', sans-serif; src: url('../fonts/HelveticaNeue-Bd.otf');
 }
 
 
@@ -13,7 +13,7 @@ body {
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	overflow-x: hidden !important;
-	font-family: HelveticaNeue;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body.story {
@@ -176,6 +176,7 @@ background-color: #1588bc;
    z-index: 1000 !important;
 }
 
+
 .story-reader .popover h4 {
 	text-transform: uppercase;
 }
@@ -251,6 +252,9 @@ li.active > a {
 
 
 /* team */
+.team-video, .team-video-title {
+	margin-left: 25px;
+}
 
 .team-video-title, .team-member-caption {
 box-shadow: 0px 2px 2px black;
@@ -259,8 +263,17 @@ border-top-left-radius: 0px !important;
 border-top-right-radius: 0px !important;
 }
 
-.popover-content {
-	background-color: red;
+.thumbnail .caption {
+	color: white;
+	font-style: italic;
+}
+
+.carousel .thumbnail, .img-thumbnail {
+	border-radius: 0px;
+}
+.carousel .popover {
+
+	background-color: white;
 	min-width: 400px;
 }
 
