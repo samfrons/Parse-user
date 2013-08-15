@@ -68,22 +68,14 @@
 
             <div class="col-12 col-sm-7 col-lg-7">
                 <span class="alert danger hide" id="errormsg_incorrect_username_password">Please provide correct username and password</span>
-                <form class="form-signin">
-                    <!--<fieldset>-->
-                        <!--<div class="clearfix">-->
-                            <!--<input name="email" type="text" placeholder="Email">-->
-                        <!--</div>-->
-                        <!--<div class="clearfix">-->
-                            <!--<input name="pword" type="password" placeholder="Password">-->
-                        <!--</div>-->
-                        <!--<button class="btn primary" type="submit">Sign in</button>-->
-                    <!--</fieldset>-->
+                <form id="login-form" class="form-signin">
                     <label>email</label>
                     <input id="email" type="text" class="input-block-level" placeholder="" autofocus><br/><br/>
                     <label>password</label>
                     <input id="password" type="password" class="input-block-level" placeholder="">
 
-                    <button id="btnlogin" type="button" class="btn btn-large btn-primary btn-block" data-loading-text="Logging in.....">Submit</button>
+                    <!--<button id="btnlogin" type="button" class="btn btn-large btn-primary btn-block" data-loading-text="Logging in.....">Submit</button>-->
+                    <input type="submit" id="btnlogin" class="btn btn-large btn-primary btn-block" data-reset-text="Submit" data-loading-text="Logging in.....">
                 </form>
             </div>
 
