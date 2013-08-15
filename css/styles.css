@@ -176,6 +176,7 @@ background-color: #1588bc;
    z-index: 1000 !important;
 }
 
+
 .story-reader .popover h4 {
 	text-transform: uppercase;
 }
@@ -259,7 +260,8 @@ border-top-left-radius: 0px !important;
 border-top-right-radius: 0px !important;
 }
 
-.popover-content {
+.carousel .popover {
+
 	background-color: red;
 	min-width: 400px;
 }
