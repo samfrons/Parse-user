@@ -91,7 +91,7 @@ ul.navbar-nav li a{
 	text-transform: uppercase;
 	font-style: italic;
 	font-weight: bold;
-	font-family: HelveticaNeue;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -250,6 +250,15 @@ width: 100%;
 li.active > a {
 }
 
+body.team .arrow:after {
+	display: none;
+	opacity: 0;
+}
+
+body.team .arrow {
+	display: none;
+	opacity: 0;
+}
 
 /* team */
 .team-video, .team-video-title {
