@@ -269,20 +269,24 @@ box-shadow: 0px solid red;
 opacity: 1;
 }
 
+.carousel {
+    z-index: 100;
+}
+
 
 .carousel-control.left {
-		width: 0; 
-	height: 0; 
+		width: 0;
+	height: 0;
 	border-top: 20px solid transparent;
-	border-bottom: 20px solid transparent; 
+	border-bottom: 20px solid transparent;
     opacity: 0.8;
-	border-right:20px solid #ef4e91; 
+	border-right:20px solid #ef4e91;
 	margin-right: 0px;
 }
 
 .carousel-control.right {
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-top: 20px solid transparent;
 	border-bottom: 20px solid transparent;
 	opacity: 0.8;
