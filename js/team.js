@@ -3,7 +3,8 @@ $(document).ready(function(){
   var popoverOptions = {
     placement: 'right',
     trigger: 'click',
-    container: '#teamCarousel',
+//    container: '#teamCarousel',
+    container: '#team-popover-holder',
     html: true,
     content: function() {
       return $('#popover-content-wrapper').children('[data-popover-content-for='+$(this).attr('id')+']').html();

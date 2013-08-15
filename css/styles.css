@@ -271,31 +271,37 @@ border-top-right-radius: 0px !important;
 .carousel .thumbnail, .img-thumbnail {
 	border-radius: 0px;
 }
-.carousel .popover {
+
+
+#team-popover-holder {
+    position: relative;
+}
+
+#team-popover-holder .popover {
 	background-color: white;
 	display: block;
 	position: absolute;
-	left: 100px;
-	top: 0px;
-	
+	left: 0px !important;
+	top: 0px !important;
+
 }
 
-.carousel .popover h3 {
+#team-popover-holder .popover h3 {
 	color: #1588bc;
 	line-height: 2px;
 	font-size: 16px;
 }
 
-.carousel .popover h4 {
+#team-popover-holder .popover h4 {
 	color: rgb(27,27,27);
 	text-transform: uppercase;
 }
 
-.carousel .popover-content {
+#team-popover-holder .popover-content {
 	background-color: white;
 	border: 2px solid #1588bc;
 	border-radius: 5px;
-	
+
 	position: absolute !important;
 	min-width: 500px;
 	top: -407px !important;
