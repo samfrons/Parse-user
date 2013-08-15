@@ -7,7 +7,7 @@ $(document).ready(function(){
 
   var popoverOptions = {
     placement: 'right',
-    trigger: 'click hover',
+    trigger: 'click',
     container: '#teamCarousel',
     html: true,
     content: function() {
