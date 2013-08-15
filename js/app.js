@@ -1,6 +1,8 @@
 $(document).ready(function(){
-  // Parse.initialize("fYOLoSeCKgYHCfvHZ4BKq2xFG4W8eZFgkCMeDb1p", "WylWNwkFQhxFTjmmaOWqhu2v5ABNCHA545TbS0r2");
-  Parse.initialize("r3odn9sQibfbr1DItzNQ5L6Rchum1nzEZdPtqLap", "Rvr8te1R8UUYlH82sy4n0loSxmG7dyYvhbAhGraw");
+//  Parse.initialize("fYOLoSeCKgYHCfvHZ4BKq2xFG4W8eZFgkCMeDb1p", "WylWNwkFQhxFTjmmaOWqhu2v5ABNCHA545TbS0r2");
+//  Parse.initialize("r3odn9sQibfbr1DItzNQ5L6Rchum1nzEZdPtqLap", "Rvr8te1R8UUYlH82sy4n0loSxmG7dyYvhbAhGraw");
+  Parse.initialize("GTRtkAfkV09eEC2Olkdxdr4QJcb378XPkxCRCZkP", "K5hYtNZpa1dQIhArbW8iOGosnUkEDt7AQ4vUzkYa"); // Matt's HasbroTest app
+
   var currentUser = Parse.User.current();
   if (currentUser) {
     // OK
@@ -43,11 +45,13 @@ $(document).ready(function(){
 
     Parse.User.logIn(username, password, {
       success: function(user) {
+        console.log('Login success', username, password, user)
         // redirect to our welcome page
         $('#btnlogin').button('reset');
         window.location = "welcome.html";
       },
       error: function(user, error) {
+        console.log('Login error', username, password, user, error)
         // The login failed. Check error to see why.
         $('#errormsg_incorrect_username_password').removeClass('hide');
         $('#errormsg_incorrect_username_password').addClass('show');
