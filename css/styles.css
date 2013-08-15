@@ -91,7 +91,7 @@ ul.navbar-nav li a{
 	text-transform: uppercase;
 	font-style: italic;
 	font-weight: bold;
-	font-family: HelveticaNeue;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -155,6 +155,28 @@ background-color: #1588bc;
 	color: white !important;
 }
 
+img.logos {
+	width: 70px;
+}
+
+.modal-dialog {
+	width: 800px;
+}
+
+.modal-content {
+	background-color: black;
+}
+
+.modal-header {
+	border-style: none;
+}
+
+button.close {
+	background-color: white;
+}
+iframe {
+	width: 100%;
+}
 .story-reader {
 	overflow: scroll;
 	max-height: 400px;
@@ -250,6 +272,15 @@ width: 100%;
 li.active > a {
 }
 
+body.team .arrow:after {
+	display: none;
+	opacity: 0;
+}
+
+body.team .arrow {
+	display: none;
+	opacity: 0;
+}
 
 /* team */
 .team-video, .team-video-title {
