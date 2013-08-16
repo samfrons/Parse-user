@@ -14,26 +14,32 @@ body {
     -webkit-background-size: cover;
     overflow-x: hidden !important;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-position: bottom center;
+
 }
 
 body.story {
     background: url(../images/story_background.jpeg) 0 0 fixed no-repeat;
+    background-position: bottom center;
 }
 
 body.team {
     background: url(../images/team_background.jpeg) 0 0 fixed no-repeat;
+    background-position: bottom center;
 }
 
 body.work {
-    background: url(../images/work.png) 0 0 fixed no-repeat;
+    background: url(../images/work.jpg) 0 0 fixed no-repeat;
+    background-position: bottom center;
 }
 
 body.submissions {
     background: url(../images/proposal_background.jpeg) 0 0 fixed no-repeat;
+    background-position: bottom center;
 }
 div.container {
     max-width: none;
-    overflow-x: hidden !important;
+   
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
     left: inherit;
@@ -54,25 +60,52 @@ div.navbar {
     box-shadow: 0px 3px 2px rgba(0,0,0,.5);
     min-height: inherit;
     padding: 0px;
+
 }
 
 ul.navbar-nav li a{
     color: white !important;
     text-transform: uppercase;
-    padding: 5px 0px 5px 5px;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
 
 }
+
+ul.nav {
+    min-width: 440px !important;
+    margin: 0 auto;
+
+
+}
+
+ul.nav li {
+    text-indent: 5px;
+    
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+}
+
 
 
 .robot {
     position: absolute;
     bottom: 0px;
     left: 66%;
+    background-image: url(../images/optimus.png);
+    position: absolute;
+bottom: 0px;
+left: 66%;
+background-image: url(../images/optimus.png);
+background-size: 100% auto;
+background-repeat: no-repeat;
+background-position: left bottom;
 }
 
 .robot img {
     width: 150%;
     position: relative;
+    visibility: hidden;
 
 }
 
@@ -97,16 +130,18 @@ ul.navbar-nav li a{
 .footer img {
     width: 400px;
     border-style: none !important;
-    display: inline;
+    display: none;
     z-index: -1;
-    visibility: hidden;
+    
 
 }
 
 img.footer {
     width: 60%;
     bottom: 0%;
-    visibility: hidden;
+    min-width: 400px;
+    display: none;
+   
 }
  
 
@@ -117,10 +152,15 @@ img.footer {
     top: 100%;
 }
 
+.top {
+    z-index: 100;
+}
+
 label {
     color: white;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 2px;
+    text-transform: capitalize;
 }
 
 button#btnlogin {
@@ -146,6 +186,12 @@ font-weight: bold !important;
 
 }
 
+.transparent  {
+    background-color: rgba(0,0,0,0) !important;
+    border-style: none;
+    box-shadow: 0px 1px 4px black;
+}
+
 .thumbnail > span {
     height: 100px;
     display: block;
@@ -163,6 +209,7 @@ font-weight: bold !important;
 .work-caption {
     background-color: #1588bc;
     color: white !important;
+    min-height: 65px !important;
 }
 
 img.logos {
@@ -290,7 +337,10 @@ p#principles:after {
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     background-color: #f166a0;
     border-right: 1px solid #f166a0;
+
+
 }
+
 
 li.active > a {
 }
@@ -321,7 +371,7 @@ body.team .popover-holder {
 
 body.team .popover-holder h3 {
     color: #1588bc;
-    line-height: 2px;
+    line-height: 15px;
     font-size: 16px;
     padding-bottom: 10px;
 }
@@ -337,7 +387,8 @@ body.team .popover-holder h4 {
 }
 
 .team-video, .team-video-title {
-    background-image: url(/images/team_logo.png);
+    background-image: url(../images/team_logo.png);
+    background-color: red;
     min-height: 300px;
     background-size: auto 300px;
     background-repeat: no-repeat;
@@ -352,13 +403,17 @@ body.team .popover-holder h4 {
     background-color: rgba(21,136,188,0.7);
     border-top-left-radius: 0px !important;
     border-top-right-radius: 0px !important;
-    max-height: 40px;
-    height: 40px;
+    max-height: 100px;
+    height: 100px;
 }
 
 .thumbnail .caption {
     color: white;
     font-style: italic;
+}
+
+.work {
+    min-width: 140px;
 }
 
 .carousel .thumbnail, .img-thumbnail {
@@ -400,6 +455,14 @@ body.team .popover-holder h4 {
     font-size: 6rem;
 }
 
+.title {
+
+}
+
+.proposalc {
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.8);
+}
+
 .btn-primary {
     background: -moz-linear-gradient(top,  rgba(23, 180, 170,0.8) 0%, rgba(21,136,188,0.8) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(23, 180, 170,0.8)), color-stop(100%,rgba(21,136,188,0.8))); /* Chrome,Safari4+ */
@@ -418,6 +481,22 @@ body.team .popover-holder h4 {
         width: 95%;
         top: 82%;
     }
+
+    div.navbar {
+        left: 0px;
+    }
+
+
+
+.robot {
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
+    background-image: url(../images/optimus_small.png);
+background-size: 100% auto;
+background-repeat: no-repeat;
+background-position: center bottom;
+}
 
 
     body.team .popover-holder {
