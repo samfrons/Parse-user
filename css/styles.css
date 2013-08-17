@@ -6,7 +6,6 @@
     font-family: 'Helvetica Neue LT Std', sans-serif; src: url('../fonts/HelveticaNeue-Bd.otf');
 }
 
-
 body {
     background: url(../images/background.jpeg) 0 0 fixed no-repeat;
     background-size: cover;
@@ -476,7 +475,7 @@ body.team .popover-holder h4 {
 
 }
 /* media queries */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .footer img {
         width: 95%;
         top: 82%;

@@ -12,11 +12,10 @@
   }
   h1{
   	font-size: @h1_fsize_small;
-  }
-  
+  }  
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
 	* {
 		font-size: @fsize_small;
 	}
@@ -28,7 +27,7 @@
 	}
 }
 
-@media (max-width: 1280px){
+@media screen and (max-width: 1280px){
 	.navbar {
 		font-size: @navbar_size_small;
 	}
@@ -91,7 +90,4 @@
 }
 .index-line-breaker200{
 	min-height: 200px;
-}
-.robot-small {
-	width: 168px;
 }

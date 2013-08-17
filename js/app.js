@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  Parse.initialize("fYOLoSeCKgYHCfvHZ4BKq2xFG4W8eZFgkCMeDb1p", "WylWNwkFQhxFTjmmaOWqhu2v5ABNCHA545TbS0r2"); // samfrons@gmail.com Hasbro app
-//  Parse.initialize("r3odn9sQibfbr1DItzNQ5L6Rchum1nzEZdPtqLap", "Rvr8te1R8UUYlH82sy4n0loSxmG7dyYvhbAhGraw");
+  //Parse.initialize("fYOLoSeCKgYHCfvHZ4BKq2xFG4W8eZFgkCMeDb1p", "WylWNwkFQhxFTjmmaOWqhu2v5ABNCHA545TbS0r2"); // samfrons@gmail.com Hasbro app
+  Parse.initialize("r3odn9sQibfbr1DItzNQ5L6Rchum1nzEZdPtqLap", "Rvr8te1R8UUYlH82sy4n0loSxmG7dyYvhbAhGraw");
 //  Parse.initialize("GTRtkAfkV09eEC2Olkdxdr4QJcb378XPkxCRCZkP", "K5hYtNZpa1dQIhArbW8iOGosnUkEDt7AQ4vUzkYa"); // Matt's HasbroTest app
 
   // Test for logged in user
@@ -12,7 +12,7 @@ $(document).ready(function(){
     window.location = "welcome.html";
   } else if (!currentUser && currentPage !== "index.html") {
     // user needs to first login
-    window.location = "index.html";
+    //window.location = "index.html";
   }
 
   $('#btnlogin').button('reset'); // reset login button
@@ -60,24 +60,4 @@ $(document).ready(function(){
     Parse.User.logOut();
     window.location = "index.html";
   });
-
-
-  // TODO: need comment for unknown mq stuff
-  var mq = window.matchMedia("(max-width: 400px)");
-  if (mq.matches) {
-    $('#normalrobot').removeClass('show');
-    $('#normalrobot').addClass('hide');
-
-    $('#smallrobot').removeClass('hide');
-    $('#smallrobot').addClass('show');
-  }
-  else {
-    $('#smallrobot').removeClass('show');
-    $('#smallrobot').addClass('hide');
-
-    $('#normalrobot').removeClass('hide');
-    $('#normalrobot').addClass('show');
-  }
-
-
 });
