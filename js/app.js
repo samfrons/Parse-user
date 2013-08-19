@@ -16,7 +16,8 @@ $(document).ready(function(){
     //window.location = "index.html";
   }
 
-  $('#btnlogin').button('reset'); // reset login button
+  if($('#btnlogin').length > 0)
+    $('#btnlogin').button('reset'); // reset login button
 
   $('#login-form').submit(function(e) {
     if (e) {
