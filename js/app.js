@@ -13,7 +13,7 @@ $(document).ready(function(){
     window.location = "welcome.html";
   } else if (!currentUser && currentPage !== "index.html") {
     // user needs to first login
-    //window.location = "index.html";
+    window.location = "index.html";
   }
 
   if($('#btnlogin').length > 0)
